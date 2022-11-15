@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: "Rubik";
+}
+/* Mobile */
+main{
+ min-height: 100vh;
+ 
+}
+
+.header {
+ min-height: 40vh;
+ background:url(./images/pattern-bg.png);
+ padding-top: 40px;
+ color: #ffff;
+ position: relative;
+}
+
+
+
+.header h1 {
+ font-size: 25px;
+ font-weight: 500;
+ margin-bottom: 15px;
+ text-align: center;
+}
+
+.search-control {
+width: 500px;
+margin: 0 auto;
+position: relative;
+}
+
+.search-btn{
+ position: absolute;
+ right: 0;
+ top: 0;
+ height: 100%;
+ padding: 0 40px;
+ border-bottom-right-radius: 12px;
+ border-top-right-radius: 12px;
+ display: flex;
+ align-items: center;
+ background-color: black;
+ cursor: pointer;
+ border: none;
+}
+
+.search-control input{
+ width: 100%;
+ padding: 15px ;
+ border: none;
+ border-radius: 12px;
+ font-size: 18px;
+}
+
+.label {
+ display: flex;
+ justify-content: space-between;
+ width: 80%;
+ margin: 0 auto;
+ background-color: #ffff;
+ padding: 20px 30px;
+ border-radius: 20px;
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ bottom: -50px;
+ z-index: 100;
+}
+
+.label-wrapper{
+   flex: 1;
+  padding-left: 40px;
+}
+
+.label p{
+ margin-bottom: 15px;
+ font-weight: 500;
+ font-size: 14px;
+ color: hsl(0, 0%, 59%);
+}
+
+.label h4{
+ color: hsl(0, 0%, 17%);
+ font-size: 22px;
+}
+
+.map{
+ min-height: 60vh;
+ z-index: -1;
+}
+
+.attribution { 
+ font-size: 11px; 
+ text-align: center; 
+}
+.attribution a { 
+ color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 426px) {
+  .label{
+   flex-direction: column;
+   top: 150px;
+   z-index: 999;
+   padding: 10px 0;
+   height: 100%;
+
+  }
+
+  .map{
+   height: 500px;
+  }
+
+  .header{
+   height: 300px;
+  }
+
+  hr{
+   display: none;
+  }
+
+  .search-control {
+   width: 90%;
+  
+  }
+
+  .map{
+   z-index: -1;
+  }
+}
